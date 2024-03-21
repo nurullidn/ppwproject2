@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="icon" rel="icon" href="img/inforsa.png" />
+	<title>Web Portofolio</title>
+
+	<!-- ambil CSS lokal -->
+	<link rel="stylesheet" href="style.css" />
+	<script src="index.js" defer></script>
+	<style>
+        /* CSS untuk dark mode */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+	<!-- header dan menu -->
+	<header>
+		<a class="brand">Portofolio</a>
+		<div></div>
+		<div class="navigasi" style="font-weight: bold">
+			<strong>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#achievements">Achievements</a>
+				<a href="#saran">Saran</a>
+				<a href="#kontak">Contact</a>
+			</strong>
+		</div>
+		<button onclick="toggleDarkMode('dark')">🌙</button>
+		<button onclick="toggleDarkMode('light')">☀️</button>
+		
+
+	</header>
+	<!-- akhir header -->
+	<!-- home -->
+	<section id="home" class="home" style="background-image: url(img/bg.jpg)">
+		<div class="content1">
+			<h2>Hello!!<br /></h2>
+			<div class="animasi-text">
+				<h3>Nurul Indriani</h3>
+				<h3>Sistem Infromasi</h3>
+				
+			</div>
+			<div style="padding-top: 50px">
+				<a class="btns" href="#certificate">My Certificate</a>
+			</div>
+		</div>
+		<div class="content2"><img src="img/yunk.jpg" class="img" /></div>
+	</section>
+	<!-- akhir  home -->
+
+	<!-- awal about -->
+	<section class="about" id="about">
+		<div class="title">
+			<h2 class="section-title">About Me</h2>
+			<hr style="width: 500px; height: 5px; border-radius: 10px" />
+		</div>
+		<div class="content">
+			<div class="col-left">
+				<div class="img-card">
+					<img src="img/uy.jpg" alt="" />
+				</div>
+			</div>
+			<div class="col-right">
+				<!-- paragraf 1 -->
+				<p style="text-align: justify">
+					I am Nurul Indriani, a student of Information Systems at the Faculty of Engineering, Mulawarman University. </a>. I'm from
+					Berau, Biduk-Biduk.
+				</p><br>
+				<!-- paragraft 2 -->
+				<p style="text-align: justify;">
+					"Since the beginning of my studies, I have been interested and passionate about delving into the world of technology, particularly in the field of information systems. I believe that information technology plays a crucial role in assisting companies and organizations to enhance operational efficiency and optimize data management. I hope to commit myself to continue learning and developing my skills in this field so that I can make a significant contribution in the future."
+					
+				</p>
+				<br>
+				<!-- tabel 1 untuk data pendidikan -->
+				<table border="1">
+					<tr>
+						<td colspan="2" align="center">
+							<h4>Introduce</h4>
+						</td>
+					</tr>
+					<tr>
+						<th>Data</th>
+						<th>Detail</th>
+					</tr>
+					<tr>
+						<td width="20%">
+							<!-- list 1: data diri -->
+							<ul>
+								<li><strong>Name</strong></li>
+								<li><strong>Birthday</strong></li>
+								<li><strong>Phone</strong></li>
+								<li><strong>Age</strong></li>
+								<li><strong>Email</strong></li>
+								<li><strong>Freelance</strong></li>
+							</ul>
+						</td>
+						<td>
+							<!-- list 1: data diri -->
+							<ul>
+								<li>Nurul Indriani</li>
+								<li>13 November 2003</li>
+								<li>+6282286876187</li>
+								<li>20</li>
+								<li>nurulidn04@gmail.com</li>
+								<li>Not Available</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				
+				<br>
+				<!-- tabel 2 untuk pendidikan -->
+				<table border="1">
+					<tr>
+						<td colspan="2" align="center">
+							<h4>Riwayat pendidikan</h4>
+						</td>
+					</tr>
+					<tr>
+						<th>Tahun </th>
+						<th>Instansi</th>
+					</tr>
+					<tr>
+						<td>
+							<!-- list 2: pendidikan -->
+							<ul>
+								<li>2009-2015</li>
+								<li>2015-2018</li>
+								<li>2018-2021</li>
+								<li>2022-Sekarang</li>
+							</ul>
+						</td>
+						<td>
+							<!-- list 2: pendidikan -->
+							<ul>
+								<li>MI DDI Biduk-Biduk</li>
+								<li>MTS DDI Biduk-Biduk</li>
+								<li>SMA NEGERI 8 BERAU</li>
+								<li>Universitas Mulawarman</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	<!-- akhir about -->
+
+	<!-- awal certificate -->
+	<style>
+		.content {
+			display: flex;
+			justify-content: center; /* Mengatur gambar ke tengah */
+			align-items: center; /* Mengatur gambar ke tengah */
+		}
+	
+		.card {
+			margin: 0 10px; /* Jarak antara gambar */
+		}
+	
+		.img-card img {
+			width: 350px;
+			height: auto; /* Biarkan tingginya menyesuaikan proporsi gambar */
+		}
+	</style>
+	
+	<section id="certificate" class="certificate" style="background-image: url(img/bg.jpg)">
+		<div class="title">
+			<h2 class="section-title">My Certificate</h2>
+			<hr style="width: 500px; height: 5px; border-radius: 10px; color: aliceblue" />
+		</div>
+		<div class="content">
+			<div class="card">
+				<div class="img-card">
+					<img src="img/BDL.jpg" />
+				</div>
+			</div>
+			<div class="card">
+				<div class="img-card">
+					<img src="img/DBD.jpg" />
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	</section>
+
+	<!-- achievements-->
+	<section id="achievements" class="achievements" style="background-image: url(img/bg.jpg)">
+    <div class="title">
+        <h2 class="section-title">Achievements</h2>
+        <hr style="width: 500px; height: 5px; border-radius: 10px; color: aliceblue" />
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <!-- Konten baris 1, kolom 1 -->
+                <div class="achievement">
+                    <h3>Lomba Seleksi Tilawatil Qur'an (STQ)</h3>
+                    <p>In 2018, I participated in a Qur'an recitation competition called the Stq Competition, specifically in the category of Qur'an recitation (Tilawah). The team consisted of three members, including a speaker, a translator, and myself as the reciter. This competition marked my first experience participating in a competition when I entered junior high school.</p>
+                </div>
+            </div>
+            <div class="col">
+                <!-- Konten baris 1, kolom 2 -->
+                <div class="achievement">
+                    <h3>Lomba Musabaqah Tilawatil Qur'an (MTQ)</h3>
+                    <p>In 2019, I participated in the Qur'an Recitation Competition in the Qur'an Syarhil category, which consisted of a team of 3 people comprising a speaker, a translator, and a reciter. Like the previous year, I took part as the reciter. This competition marked my second participation since entering junior high school.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  saran  -->
+<!-- saran -->
+<section id="saran" class="saran">
+    <div class="title">
+        <h2 class="section-title">Saran</h2>
+    </div>
+    <div class="content">
+        <div class="form-container">
+            <form id="saranForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="saran">Saran:</label>
+                    <textarea id="saran" name="saran" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+
+
+	
+	<!-- awal kontak -->
+	<section id="kontak" class="kontak"  style="background-image: url(img/bg.jpg)">
+		<div class="title">
+			<h2 class="section-title">Hubungi Saya</h2>
+			<hr style="width: 500px; height: 5px; border-radius: 10px" />
+		</div>
+		<p style="padding: 50px;color:white;">Untuk kritik dan saran bisa menghubungi kontak atau mediaa sosial saya<br>
+		</p>
+		<div class="content">
+
+			
+			<div class="card">
+				<div class="img-card"><a href="https://www.instagram.com/nurulidnn_/" target="blank" />
+					<img src="img/icon/instagram.ico" /></a></div>
+			</div>
+			<div class="card">
+				<div class="img-card"><a href="https://wa.me/6282286876187" target="blank" />
+					<img src="img/icon/whatsapp.ico" /></a></div>
+			</div>
+			<div class="card">
+				<div class="img-card"><a href="mailto:nurulidn04@gmail.com" target="blank" />
+					<img src="img/icon/gmail.ico" /></a></div>
+			</div>
+		</div>
+		
+	</section>
+
+	<!-- footer -->
+	<footer class="footer">Copyright &copy; 2024 |
+		<a href="https://wa.me/6282286876187">nurulidnn_</a>
+	</footer>
+	<!-- akhir footer -->
+
+ <!-- JavaScript -->
+ <!-- <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        const formData = new FormData(this); // Get form data
+        let formValues = {};
+        formData.forEach((value, key) => {
+            formValues[key] = value;
+        });
+        const message = JSON.stringify(formValues); // Convert form data to JSON string
+        // Display message using alert
+        alert(message);
+        // Display message above the page
+        displayMessage(message);
+    });
+
+    // Function to toggle dark mode
+    function toggleDarkMode(mode) {
+        const body = document.body;
+        if (mode === 'dark') {
+            body.classList.add('dark-mode');
+        } else if (mode === 'light') {
+            body.classList.remove('dark-mode');
+        }
+    }
+
+    // Function to display message above the page
+    function displayMessage(message) {
+        const messageDiv = document.createElement('div');
+        messageDiv.textContent = message;
+        messageDiv.style.position = 'fixed';
+        messageDiv.style.top = '20px';
+        messageDiv.style.left = '50%';
+        messageDiv.style.transform = 'translateX(-50%)';
+        messageDiv.style.padding = '10px';
+        messageDiv.style.backgroundColor = '#333';
+        messageDiv.style.color = '#fff';
+        messageDiv.style.zIndex = '9999';
+        messageDiv.style.borderRadius = '5px';
+        document.body.appendChild(messageDiv);
+        // Remove the message after 5 seconds
+        setTimeout(() => {
+            document.body.removeChild(messageDiv);
+        }, 5000);
+    }
+</script> -->
+
+
+
+</body>
+
+</html>

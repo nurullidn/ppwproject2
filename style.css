@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+/* untuk header */
+header {
+  z-index: 999;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: goldenrod;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigasi {
+  position: relative;
+}
+
+header .navigasi a {
+  color: goldenrod;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+header .navigasi a:hover {
+  color: #3a6cf4;
+}
+
+body {
+  min-height: 110vh;
+}
+
+/* h4 secara umum */
+h4 {
+  color: goldenrod;
+}
+
+/* home */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+/* konten kiri */
+.home .content1 {
+  width: 500px;
+}
+
+.home .content1 h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.home .content1 h2 span {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.animasi-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animasi-text h3 {
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+  0% {
+      margin-top: 0;
+  }
+
+  25% {
+      margin-top: -70px;
+  }
+
+  50% {
+      margin-top: -140px;
+  }
+
+  75% {
+      margin-top: -70px;
+  }
+
+  100% {
+      margin-top: 0;
+  }
+}
+
+.btns {
+  background-color: #3a6cf4;
+  color: gold;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btns:hover {
+  background: white;
+  color: #3a6cf4;
+}
+
+/* konten kanan */
+.home .content2 {
+  width: 300px;
+}
+
+/* foto di halaman home */
+.home .img {
+  border-radius: 50%;
+  width: 65vh;
+  position: relative;
+  display: flex;
+}
+
+/* about */
+.about {
+  min-height: 150vh;
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 30%;
+}
+
+.about .content .col-right {
+  position: relative;
+  width: 65%;
+}
+
+.about .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+.about .content .col-left .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  align-items: center;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+  color: #3a6cf4;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.certificate {
+  min-height: 100vh;
+}
+
+.certificate .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.certificate .content .card {
+  width: 250px;
+  margin: 15px;
+}
+
+.certificate .content .img-card {
+  position: relative;
+  width: 350px; /* Sesuaikan lebar gambar */
+  height: 250px; /* Sesuaikan tinggi gambar */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.certificate .content .img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.certificate .content .img-card img:hover {
+  transform: scale(1.2);
+}
+
+/* achievements */
+.achievements {
+  min-height: 100vh;
+}
+
+.achievements .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements .row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.achievements .col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.achievement {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.achievement h3 {
+  color: #333;
+}
+
+.achievement p {
+  color: #666;
+}
+
+/* contact */
+.kontak {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.kontak .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.kontak .content .card {
+  width: 100px;
+  margin: 15px;
+}
+
+.kontak .content .img-card {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.kontak .content .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Specify object-fit value */
+}
+
+/* Form Styling */
+.saran .content form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.saran .content form .form-group {
+  margin-bottom: 20px;
+}
+
+.saran .content form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.saran .content form input[type="text"],
+.saran .content form input[type="email"],
+.saran .content form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.saran .content form textarea {
+  height: 150px;
+}
+
+.saran .content form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3a6cf4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.saran .content form button[type="submit"]:hover {
+  background-color: #264aaf;
+}
+
+
